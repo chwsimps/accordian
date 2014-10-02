@@ -1,1 +1,4 @@
-console.log('The Iron Yard Rocks');
+$('.boxes').click(function() {
+  $('.boxes').removeClass('sec')
+  $(this).addClass('sec');
+});
