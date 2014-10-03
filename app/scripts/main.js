@@ -1,4 +1,3 @@
-$('.boxes').click(function() {
-  $('.boxes').removeClass('sec')
-  $(this).addClass('sec');
+$('.box1').click(function() {
+  $(this).addClass('open');
 });

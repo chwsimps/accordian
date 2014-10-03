@@ -6,50 +6,82 @@
   margin: 0;
   width: 600px;
   font-size: 12px;
-  font-weight: 200;
   line-height: 30px;
   background-color: white;
   border: solid 1px HSLA(184, 100%, 42%, 1);
-  padding: 10;
-  margin-top: -4px;
-  list-style:  none;
   }
-  h2 {
-    font-size: 20px;
-    height: 50px;
-    background-color: HSLA(184, 100%, 42%, 1);
-    margin: 0;
-    padding: 10px;
-    &:hover {
-      background-color: blue;
-  }
+
+@mixin head {
+  color: white;
+  font-size: 20px;
+  height: 50px;
+  background-color: HSLA(184, 100%, 42%, 1);
+  margin: 0;
+  padding: 10px;
+  &:hover {
+    background-color: HSLA(184, 98%, 83%, 1);
+    transition: background-color 2s ease;
+}
 }
 
 // Custom Styles
-.full {
-  margin: 100px;
+
+* {
+  text-decoration: none;
 }
 
-.boxes {
-  margin: 0;
-  display:inline-block;
+.full {
+  width: 600px;
+  margin: 50px 150px;
+  text-decoration: none;
 }
 
 .box1 {
   @include box;
 }
 
-
 .box2 {
   @include box;
 }
-
 
 .box3 {
   @include box;
 }
 
-.sec {
-  height: 125px;
+.head1 {
+  @include head;
+}
+
+.head2 {
+  @include head;
+}
+
+.head3 {
+  @include head;
+}
+
+.par1 {
+  padding-left: 10px;
+  overflow: auto;
+}
+
+.par2 {
+  padding-left: 10px;
+  overflow: auto;
+}
+
+.par3 {
+  padding-left: 10px;
+  overflow: auto;
+}
+
+.close {
+  height: 50px;
   overflow: hidden;
+}
+
+
+.open {
+  height: 200px;
+  overflow: inherit;
 }
