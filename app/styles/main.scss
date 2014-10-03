@@ -8,7 +8,8 @@
   font-size: 12px;
   line-height: 30px;
   background-color: white;
-  border: solid 1px HSLA(184, 100%, 42%, 1);
+  // border: solid 2px HSLA(184, 100%, 42%, 1);
+  border-radius: 5px;
   }
 
 @mixin head {
@@ -18,10 +19,24 @@
   background-color: HSLA(184, 100%, 42%, 1);
   margin: 0;
   padding: 10px;
+  border: solid 2px HSLA(184, 100%, 42%, 1);
+  border-radius: 5px;
   &:hover {
     background-color: HSLA(184, 98%, 83%, 1);
+    border: solid 2px HSLA(184, 98%, 83%, 1);
     transition: background-color 2s ease;
+  }
 }
+
+@mixin div {
+  background-color: HSLA(34, 100%, 95%, 1);
+  border-radius: 5px;
+}
+
+@mixin par {
+  height: 150px;
+  padding: 10px;
+  margin: 0;
 }
 
 // Custom Styles
@@ -29,7 +44,7 @@
 * {
   text-decoration: none;
   text-decoration-color: none;
-  transition-duration: 3s;
+  transition-duration: 2s;
 }
 
 .full {
@@ -63,21 +78,27 @@
 }
 
 .par1 {
-  height: 150px;
-  padding: 10px;
-  margin: 0;
+  @include par;
 }
 
 .par2 {
-  height: 150px;
-  padding: 10px;
-  margin: 0;
+  @include par;
 }
 
 .par3 {
-  height: 150px;
-  padding: 10px;
-  margin: 0;
+  @include par;
+}
+
+.div1 {
+  @include div;
+}
+
+.div2 {
+  @include div;
+}
+
+.div3 {
+  @include div;
 }
 
 .open {
