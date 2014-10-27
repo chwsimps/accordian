@@ -1,0 +1,112 @@
+ // Bourbon & Neat
+// @import '../../bower_components/bourbon/dist/bourbon';
+// @import '../../bower_components/neat/app/assets/stylesheets/neat';
+
+@mixin box {
+  margin: 0;
+  width: 600px;
+  font-size: 12px;
+  line-height: 30px;
+  background-color: white;
+  // border: solid 2px HSLA(184, 100%, 42%, 1);
+  border-radius: 5px;
+  }
+
+@mixin head {
+  color: white;
+  font-size: 20px;
+  height: 30px;
+  background-color: HSLA(184, 100%, 42%, 1);
+  margin: 0;
+  padding: 10px;
+  border: solid 2px HSLA(184, 100%, 42%, 1);
+  border-radius: 5px;
+  &:hover {
+    background-color: HSLA(184, 98%, 83%, 1);
+    border: solid 2px HSLA(184, 98%, 83%, 1);
+    transition: background-color 2s ease;
+  }
+}
+
+@mixin div {
+  background-color: HSLA(34, 100%, 95%, 1);
+  border-radius: 5px;
+}
+
+@mixin par {
+  height: 150px;
+  padding: 10px;
+  margin: 0;
+}
+
+// Custom Styles
+
+* {
+  text-decoration: none;
+  text-decoration-color: none;
+  transition-duration: 2s;
+}
+
+.full {
+  width: 600px;
+  margin: 50px 150px;
+  text-decoration: none;
+}
+
+.box1 {
+  @include box;
+}
+
+.box2 {
+  @include box;
+}
+
+.box3 {
+  @include box;
+}
+
+.head1 {
+  @include head;
+}
+
+.head2 {
+  @include head;
+}
+
+.head3 {
+  @include head;
+}
+
+.par1 {
+  @include par;
+}
+
+.par2 {
+  @include par;
+}
+
+.par3 {
+  @include par;
+}
+
+.div1 {
+  @include div;
+}
+
+.div2 {
+  @include div;
+}
+
+.div3 {
+  @include div;
+}
+
+.open {
+  height: 150px;
+  overflow: hidden;
+}
+
+.close {
+  height: 0;
+  overflow: hidden;
+}
